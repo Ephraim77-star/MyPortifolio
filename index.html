@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Ephraim | Neon Portfolio | CheckMate Screenshots</title>
+    <title>Ephraim | Neon Portfolio | SmartShelf + CheckMate</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
@@ -543,7 +543,7 @@
             font-weight: 600;
         }
 
-        /* ========== SCREENSHOT HORIZONTAL SLIDER (CheckMate Gallery) ========== */
+        /* ========== SCREENSHOT HORIZONTAL SLIDER (Shared styles) ========== */
         .screenshots-container {
             margin-top: 1.5rem;
             width: 100%;
@@ -810,17 +810,34 @@
             </div>
         </section>
 
-        <!-- Projects Section with CheckMate Horizontal Slider embedded -->
+        <!-- Projects Section: SmartShelf (replaces Android Task Manager) + existing projects -->
         <section id="projects" class="projects-section">
             <h2 class="section-title">My Projects</h2>
             <div class="projects-grid">
+                <!-- NEW: SmartShelf Project Card (replaces Android Task Manager) with horizontal screenshots -->
                 <div class="project-card">
                     <div class="project-content">
-                        <h3>Android Task Manager</h3>
-                        <p>A productivity app built with Kotlin that helps users organize their daily tasks with reminders and priority settings.</p>
-                        <div class="project-tags"><span class="tag">Qt6</span><span class="tag">Android</span><span class="tag">SQLITE DB</span></div>
+                        <h3>SmartShelf</h3>
+                        <p>A robust library management system designed to handle book inventories, member tracking, checkouts, and returns with a modern Qt C++ & QML interface and SQLite backend.</p>
+                        <div class="project-tags">
+                            <span class="tag">Qt C++</span>
+                            <span class="tag">Qt QML</span>
+                            <span class="tag">SQLite</span>
+                        </div>
+                        <!-- Horizontal sliding list of SmartShelf screenshots -->
+                        <div class="screenshots-container">
+                            <h4><i class="fas fa-images"></i> SmartShelf App Screenshots · slide to explore →</h4>
+                            <div class="screenshot-slider">
+                                <div class="screenshot-item"><img src="Lib1.png" alt="SmartShelf Dashboard" loading="lazy"></div>
+                                <div class="screenshot-item"><img src="Lib2.png" alt="SmartShelf Book Management" loading="lazy"></div>
+                                <div class="screenshot-item"><img src="Lib3.png" alt="SmartShelf Member Section" loading="lazy"></div>
+                                <div class="screenshot-item"><img src="Lib4.png" alt="SmartShelf Transactions" loading="lazy"></div>
+                                <div class="screenshot-item"><img src="Lib5.png" alt="SmartShelf Analytics" loading="lazy"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-content">
                         <h3>Portfolio Website</h3>
@@ -829,7 +846,7 @@
                     </div>
                 </div>
                 
-                <!-- CHECKMATE PROJECT CARD with HORIZONTAL SCREENSHOT SLIDER (after project details) -->
+                <!-- CHECKMATE PROJECT CARD (kept unchanged as per request) -->
                 <div class="project-card">
                     <div class="project-content">
                         <h3>CheckMate</h3>
@@ -839,7 +856,6 @@
                             <span class="tag">Qt QML</span>
                             <span class="tag">SQL</span>
                         </div>
-                        <!-- Horizontal sliding list of CheckMate screenshots directly after the CheckMate project content -->
                         <div class="screenshots-container">
                             <h4><i class="fas fa-images"></i> App Screenshots · slide to explore →</h4>
                             <div class="screenshot-slider">
@@ -855,10 +871,13 @@
 
                 <div class="project-card">
                     <div class="project-content">
-                        <h3>Game of Life Simulation</h3>
-                        <p>An interactive implementation of Conway's Game of Life with customizable rules and visualization options.</p>
-                        <div class="project-tags"><span class="tag">C++</span><span class="tag">SFML</span><span class="tag">Algorithms</span></div>
+                        <h3>ScrapLink</h3>
+                        <p>A digital platform that connects you with local buyers for metals, plastics, electronics, and more. Just list your scrap, get a fair price, and schedule a pickup—all without any hassle. Turn your waste into cash while helping the planet recycle smarter.</p>
+                        <div class="project-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Supabase</span></div>
                     </div>
+                    </div>
+                       <a href="https://scraplinkecomarket.netlify.app" class="project-link" target="_blank" rel="noopener noreferrer">Visit Website →</a>
+                  </div>
                 </div>
             </div>
         </section>
